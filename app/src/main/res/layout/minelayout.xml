@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imglogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            fresco:placeholderImage="@drawable/p4634"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imglogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="请登录"
+            android:textSize="20sp" />
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/mine_souchang"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <View
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorgray"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的收藏"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"/>
+    <ImageView
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:src="@drawable/ajk"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="13dp"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mine_shezhi"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <View
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorgray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:src="@drawable/ajk"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="13dp"/>
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorgray"/>
+    </RelativeLayout>
+</LinearLayout>

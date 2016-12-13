@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyCustomTopView">
+        <attr name="leftImgView" format="reference"/>
+        <attr name="rightImgVisw" format="reference"/>
+        <attr name="centerTextTitle" format="string|reference"/>
+        <attr name="centerTextSize" format="dimension|reference"/>
+        <attr name="centerTextColor" format="color|reference"/>
+    </declare-styleable>
+</resources>

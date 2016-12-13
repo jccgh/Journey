@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_journey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jcc.journey.view.activity.JourneyActivity">
+    <jcc.mycustomtopview.MyCustomTopView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        fresco:leftImgView="@drawable/aditop"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:id="@+id/journey_customtoview"
+        fresco:centerTextTitle="景点介绍"
+        />
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/journey_customtoview">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="描述:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/journey_conent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="介绍:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/journey_attention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购票信息:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/journey_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址："
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/journey_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/journey_collect_img"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:src="@drawable/w_xianhua"
+                android:padding="8dp"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
