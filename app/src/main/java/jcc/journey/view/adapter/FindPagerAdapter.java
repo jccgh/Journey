@@ -30,6 +30,11 @@ public class FindPagerAdapter extends PagerAdapter {
     }
 
     @Override
+    public int getItemPosition(Object object) {
+        return POSITION_NONE;
+    }
+
+    @Override
     public boolean isViewFromObject(View view, Object object) {
         return view==(View) object;
     }
@@ -37,6 +42,7 @@ public class FindPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         ImageView imageView = new ImageView(context);
+        imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         Picasso.with(context).load(list.get(position)).into(imageView);
         ((ViewPager)container).addView(imageView);
         return imageView;

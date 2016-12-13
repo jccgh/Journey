@@ -1,83 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:fresco="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_journey"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="jcc.journey.view.activity.JourneyActivity">
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_journey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="jcc.journey.view.activity.JourneyActivity">
+
     <jcc.mycustomtopview.MyCustomTopView
+        android:id="@+id/journey_customtoview"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        fresco:leftImgView="@drawable/aditop"
-        android:paddingTop="12dp"
         android:paddingBottom="12dp"
-        android:id="@+id/journey_customtoview"
+        android:paddingTop="12dp"
         fresco:centerTextTitle="景点介绍"
+        fresco:leftImgView="@drawable/aditop"
         />
+
     <ScrollView
-        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/journey_customtoview">
+        android:layout_height="match_parent"
+        android:layout_below="@id/journey_customtoview"
+        android:layout_marginTop="5dp">
 
         <LinearLayout
-            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="5dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="描述:"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/journey_conent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="介绍:"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/journey_attention"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="购票信息:"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/journey_coupon"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="地址："
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/journey_address"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="下点击收藏"
+                android:textColor="@color/ptr_header_red"
+                android:textSize="18sp"/>
+
             <ImageView
                 android:id="@+id/journey_collect_img"
                 android:layout_width="49dp"
                 android:layout_height="49dp"
                 android:layout_gravity="center"
-                android:src="@drawable/w_xianhua"
                 android:padding="8dp"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/w_xianhua"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评论："
+                    android:layout_gravity="start"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/journey_commentEt"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorgreen"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorblack"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交"
+                android:textSize="18sp"
+                android:layout_gravity="right"
+                android:id="@+id/journey_commentBt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名：评论内容"
+                android:textSize="18sp"
+                android:textColor="@color/colorblack"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/journey_listview"
+                android:layout_height="match_parent">
+
+            </ListView>
         </LinearLayout>
+
     </ScrollView>
 </RelativeLayout>

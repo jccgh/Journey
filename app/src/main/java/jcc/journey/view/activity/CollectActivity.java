@@ -52,7 +52,7 @@ public class CollectActivity extends AppCompatActivity {
                         CollectActivity.this.runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                Log.d("TAG", "run: "+listname.size());
+                                Log.d("TAG", "run: "+listname.size()+listname.get(0));
                                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(CollectActivity.this,android.R.layout.simple_list_item_1,listname);
                                 mlv.setAdapter(adapter);
 
@@ -93,7 +93,7 @@ public class CollectActivity extends AppCompatActivity {
 
     private void initview() {
         mtop = (MyCustomTopView) findViewById(R.id.collect_customtoview);
-        mlv = (ListView) findViewById(R.id.listview);
+        mlv = (ListView) findViewById(R.id.collect_listview);
 
     }
 }
