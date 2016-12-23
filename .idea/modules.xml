@@ -3,10 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Journey.iml" filepath="$PROJECT_DIR$/Journey.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Journey.iml" filepath="$PROJECT_DIR$/Journey.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyCustomTopView/MyCustomTopView.iml" filepath="$PROJECT_DIR$/MyCustomTopView/MyCustomTopView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MyCustomTopView/MyCustomTopView.iml" filepath="$PROJECT_DIR$/MyCustomTopView/MyCustomTopView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
